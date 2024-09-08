@@ -44,6 +44,10 @@ created now --------select ----choose-----disable protection --------file syst p
 go to cd -----sudo su -mkdir /singa-nfs ----------go singa efs on aws -------attcah ---mount by ip ---------availabi zone ----1b ------copy key -----paste on singa cd 
 / /singa-nfs 
 
+go to aws file syst ---click on already created file syst----network ---manage-----select our sec-group in all 3---
+----and untick default ----save
+
+
 cd /singa-nfs
 
 
