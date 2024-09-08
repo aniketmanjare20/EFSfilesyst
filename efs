@@ -22,9 +22,9 @@ go node1 cd ------mkdir /nfs-data ------- copy the coomand of nfs client from mo
 work ----go to aws file syst ---click on already created file syst----network ---manage-----select our sec-group in all 3---
 ----and untick default ----save
 ----------duplicate aws window -----ec2 -------security groups ----------select the same security group that is mentioned near mount target state-----click on it ------edit 
-inbound --------add rule ------nfs ------any ipv4 --------save -----go to cd node1 -----copy the coomand of nfs client from mount ip page -------paste in node 1 cd --------
+inbound --------add rule ------nfs ------any ipv4 --------save -----go to cmd node1 -----copy the coomand of nfs client from mount ip page -------paste in node 1 cd --------
 jsut change end of the link / /nfs-data  ------works--------cd /nfs-data --------make few sample files ------touch data.txt{1..100}------ll--------
-now again attach to different instance -------copy the previous  command of nfs client from mount ip page---cd node2- ---------mkdir /nfs-redhat --------
+now again attach to different instance -------(copy the previous  command of nfs client from mount ip page)---cmd node2- ---------mkdir /nfs-redhat --------
 -paste the command-----cd /nfs-redhat ---------ll 
 
 
