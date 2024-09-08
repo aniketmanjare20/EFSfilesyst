@@ -19,7 +19,8 @@ connect to node 3---------------------sudo su - -------------------apt update --
 Go to AWS --------------Search EFS----------create file syst --------efs-vol --------create---------click on file syst id ---------network ----wait till mount target status 
 gets as available for all 3 ------attach(present at top) --------mount by Ip------provide the subnet where we have to attach efs -------1b -----
 go node1 cd ------mkdir /nfs-data ------- copy the coomand of nfs client from mount ip page -------paste in node 1 cd --------jsut change end of the link / /nfs-data --not
-work
+work ----go to aws file syst ---click on already created file syst----network ---manage-----select our sec-group in all 3---
+----and untick default ----save
 ----------duplicate aws window -----ec2 -------security groups ----------select the same security group that is mentioned near mount target state-----click on it ------edit 
 inbound --------add rule ------nfs ------any ipv4 --------save -----go to cd node1 -----copy the coomand of nfs client from mount ip page -------paste in node 1 cd --------
 jsut change end of the link / /nfs-data  ------works--------cd /nfs-data --------make few sample files ------touch data.txt{1..100}------ll--------
