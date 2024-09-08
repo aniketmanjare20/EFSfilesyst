@@ -21,7 +21,7 @@ gets as available for all 3 ------attach(present at top) --------mount by Ip----
 go node1 cd ------mkdir /nfs-data ------- copy the coomand of nfs client from mount ip page -------paste in node 1 cd --------jsut change end of the link / /nfs-data --not
 work ----go to aws file syst ---click on already created file syst----network ---manage-----select our sec-group in all 3---
 ----and untick default ----save
-----------duplicate aws window -----ec2 -------security groups ----------select the same security group that is mentioned near mount target state-----click on it ------edit 
+----------duplicate aws window -----instances -------security groups ----------select the same security group that is mentioned near mount target state-----click on it ------edit 
 inbound --------add rule ------nfs ------any ipv4 --------save -----go to cmd node1 -----copy the coomand of nfs client from mount ip page -------paste in node 1 cd --------
 jsut change end of the link / /nfs-data  ------works--------cd /nfs-data --------make few sample files ------touch data.txt{1..100}------ll--------
 now again attach to different instance -------(copy the previous  command of nfs client from mount ip page)---cmd node2- ---------mkdir /nfs-redhat --------
@@ -32,7 +32,7 @@ go to cd of node3 -------sudo su - ---------mkdir /nfs-ubuntu ----------now go t
 paste it / /nfs-ubuntu----------cd /nfs-ubuntu -----------ll
 
 
-
+go to singapore loc ---create instance -singa---aws---existing key---subnet=1a---existing sec----launch
 
 efs--------filesysttems----click on file-----now go to replications -------create replication ------replicate to existing (fr that we need to have existing file syst 
 at destination)   -------go to singapore-----------search EFS -------Create Efs -----singa-efs -------create------ go to mumbai -------replicate to existing (fr that we
